@@ -1,0 +1,36 @@
+SELECT * FROM USERS
+---------------------
+SELECT LNAME FROM USERS
+---------------------
+SELECT ID,FNAME,LNAME,AGE FROM USERS
+---------------------
+SELECT LNAME FROM USERS WHERE ID=4
+---------------------
+SELECT FNAME FROM USERS WHERE AGE>20
+---------------------
+SELECT FNAME FROM USERS WHERE LNAME="KARIMI"
+---------------------
+= , < , > , >= , <= , != , BETWEEN , LIKE
+---------------------
+SELECT FNAME FROM USERS WHERE ID BETWEEN 1 AND 5
+---------------------
+SELECT LNAME FROM USERS WHERE FNAME LIKE "NIM"
+---------------------
+SELECT LNAME FROM USERS ORDERBY AGE
+---------------------
+SELECT * FROM USERS WHERE LNAME LIKE "%i%"
+---------------------
+SELECT * FROM USERS WHERE LNAME NOT LIKE "%i%"
+---------------------
+SELECT * FROM USERS WHERE LNAME  LIKE "_____i"
+---------------------
+INSERT INTO USERS VALUES(6,"FATEMI","HOSSEIN",21)
+----------------------
+INSERT INTO USERS(FNAME,LNAME) VALUES("MAHDI","ALAVI")
+----------------------
+UPDATE USERS SET AGE=10 WHERE ID=5
+----------------------
+DELETE * FROM USERS
+----------------------
+DELETE FROM USERS WHERE LNAME="SADEGHI"
+----------------------
