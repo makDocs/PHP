@@ -1,7 +1,7 @@
 <?php
 
 class Phone{
-    private $barnd , $name , $color , $sold ;
+    private $barnd = '' , $name  , $color , $sold  ;
     public static $stock = 100;
     const YEAR = 2018;
     const TYPE = 'SmartPhone';
@@ -41,16 +41,16 @@ class Phone{
 
 }
 
-$phone1 = new Phone();
-$phone2 = new Phone();
-$phone3 = new Phone();
-$phone4 = new Phone();
-$phone5 = new Phone();
 
+$phone1 = new Phone();
 $phone1->SeterValue('Samsung','S8','blue',20);
+$phone2 = new Phone();
 $phone2->SeterValue('Samsung','J7 Prime','red',34);
+$phone3 = new Phone();
 $phone3->SeterValue('Apple','X','black',12);
+$phone4 = new Phone();
 $phone4->SeterValue('Apple','5s','green',45);
+$phone5 = new Phone();
 $phone5->SeterValue('Samsung','S3','pink',73);
 
 $phones = array('phone1','phone2','phone3','phone4','phone5');
@@ -65,6 +65,3 @@ foreach ($phones as $key => $value) {
 if($phone1 instanceof Phone){
     echo 'Its a Phone';
 }
-
-
-?>
