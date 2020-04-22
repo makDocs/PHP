@@ -1,0 +1,7 @@
+For more information on the new features and other changes, you can read the NEWS file, or the UPGRADING file for a complete list of upgrading notes. Internal changes are listed in the UPGRADING.INTERNALS file. These files can also be found in the release archive.
+
+The next release would be RC6, planned for November 22nd.
+
+The signatures for the release can be found in the manifest or on the QA site.
+
+Thank you for helping us make PHP better.

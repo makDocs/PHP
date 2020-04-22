@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>API</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="well bg-warning">
+                    <div id="result"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script>
+        const el = {
+            result: document.querySelector('#result'),
+            obj: {
+                table: 'users',
+                limit: '2'
+            }
+        }
+        const {
+            result,
+            obj
+        } = el;
+        const dbParam = JSON.stringify(obj)
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+
+            }
+        }
+        xhr.open("GET", 'ajax2.php?x='+dbParam, true);
+        // xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send();
+    </script>
+</body>
+
+</html>
