@@ -19,6 +19,10 @@ if(isset($_POST['submit'])){
     }
 
 }
+else{
+    header("location:form.php?wrong=Permission denid");
+    exit;
+}
 function Validations($data){
     if(isset($data) && !empty($data)){
         return true;

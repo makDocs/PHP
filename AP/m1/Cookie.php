@@ -3,7 +3,7 @@
     $cookie_name = 'Test';
     $cookie_value = 'yes';
     setcookie($cookie_name,$cookie_value,time()+(86400*20));
-    // setcookie($cookie_name,$cookie_value,time() - (86400*20)); // Delete cookie
+    // setcookie($cookie_name,$cookie_value,time() - 1); // Delete cookie
 
 
 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="res"></p>
+<script>
+    var xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange= function () {
+        if (this.readyState == 4 && this.status == 200){
+            obj= JSON.parse(this.responseText);
+            document.getElementById("res").innerHTML=obj[2];
+        }
+    };
+    xmlhttp.open("GET","index.php",true);
+    xmlhttp.send();
+</script>
+</body>
+</html>

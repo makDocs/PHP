@@ -76,7 +76,6 @@
                     اگر form بود
                     
                 */
-                // xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
 
                 // POST
                 xhr.send(`req=${item.textContent}&n1=${numbers[0].value}&n2=${numbers[1].value}`)

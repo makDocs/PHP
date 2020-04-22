@@ -1,6 +1,6 @@
 <?php
 
-function autoload($classname){
+function autoload_MAK($classname){
     $path = "classes/" . $classname . '.php';
     echo $path . '<br>';
     
@@ -11,4 +11,4 @@ function autoload($classname){
     }
 }
 
-spl_autoload_register("autoload");
+spl_autoload_register("autoload_MAK");

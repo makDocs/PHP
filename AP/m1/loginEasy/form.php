@@ -61,7 +61,7 @@
         <?php
 
                 if (isset($_GET['empty'])) {
-                    echo "<h3 style='color: red;'>" . strtoupper($_GET['empty']) . "</h3>";
+                    echo "<h3 style='color: red;'>" . strtolower($_GET['empty']) . "</h3>";
                     // echo 'sdsd';
                 }
 
