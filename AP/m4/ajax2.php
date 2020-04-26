@@ -3,8 +3,9 @@
 require_once('./config.php');
 
 // $objs= "[table:'users',limit:'2']";
+header('Content-Type:aplication/json;');
 class A{
-    public $table = 'users';
+    public $table = 'USERS';
     public  $limit = '2';
     
 }
